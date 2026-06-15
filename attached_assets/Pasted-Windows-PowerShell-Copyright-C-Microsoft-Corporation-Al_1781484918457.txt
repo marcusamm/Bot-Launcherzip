@@ -1,0 +1,88 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\marcu\Desktop\GFNLauncher> node .\gfn-launcher.cjs
+[2026-06-15T00:51:10.325Z] [SYS] ============================================================
+[2026-06-15T00:51:10.327Z] [SYS] GFN Bot Launcher -- Objective First
+[2026-06-15T00:51:10.327Z] [SYS] API: http://127.0.0.1:8787/api
+[2026-06-15T00:51:10.327Z] [SYS] Log: C:\Users\marcu\Desktop\GFNLauncher\launcher.log
+[2026-06-15T00:51:10.328Z] [SYS] ============================================================
+[2026-06-15T00:51:10.473Z] [SYS] Launching 2 bot(s) in background...
+[02.51.10] [Shawnryder] Starting (profile: C:\GFNBots\EdgeProfile\Bot1)
+[02.51.10] [Briandowd] Starting (profile: C:\GFNBots\EdgeProfile\Bot2)
+[02.51.11] [Shawnryder] Navigating to GFN...
+[02.51.11] [Briandowd] Navigating to GFN...
+[02.51.17] [Shawnryder] Session active -- skipping login
+[02.51.17] [Shawnryder] Navigating to GFN game library...
+[02.51.17] [Briandowd] Session active -- skipping login
+[02.51.17] [Briandowd] Navigating to GFN game library...
+[02.51.23] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-1-games-page.png
+[02.51.23] [Shawnryder] Looking for Hell Let Loose card...
+[02.51.23] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-3-not-found.png
+[02.51.23] [Shawnryder] Fatal error: Could not find Hell Let Loose on the GFN games page. Check screenshot hll-3-not-found.png
+[02.51.23] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-1-games-page.png
+[02.51.23] [Briandowd] Looking for Hell Let Loose card...
+[02.51.23] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-3-not-found.png
+[02.51.23] [Briandowd] Fatal error: Could not find Hell Let Loose on the GFN games page. Check screenshot hll-3-not-found.png
+[2026-06-15T00:51:23.551Z] [SYS] All bots stopped.
+PS C:\Users\marcu\Desktop\GFNLauncher> node .\gfn-launcher.cjs
+[2026-06-15T00:52:51.114Z] [SYS] ============================================================
+[2026-06-15T00:52:51.116Z] [SYS] GFN Bot Launcher -- Objective First
+[2026-06-15T00:52:51.116Z] [SYS] API: http://127.0.0.1:8787/api
+[2026-06-15T00:52:51.116Z] [SYS] Log: C:\Users\marcu\Desktop\GFNLauncher\launcher.log
+[2026-06-15T00:52:51.117Z] [SYS] ============================================================
+[2026-06-15T00:52:51.263Z] [SYS] Launching 2 bot(s) in background...
+[02.52.51] [Shawnryder] Starting (profile: C:\GFNBots\EdgeProfile\Bot1)
+[02.52.51] [Briandowd] Starting (profile: C:\GFNBots\EdgeProfile\Bot2)
+[02.52.51] [Shawnryder] Navigating to GFN...
+[02.52.51] [Briandowd] Navigating to GFN...
+[02.52.58] [Shawnryder] Session active -- skipping login
+[02.52.58] [Shawnryder] Navigating to GFN...
+[02.52.58] [Briandowd] Session active -- skipping login
+[02.52.58] [Briandowd] Navigating to GFN...
+[02.53.04] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-1-games-page.png
+[02.53.04] [Shawnryder] Clicked nav: Spil
+[02.53.04] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-1-games-page.png
+[02.53.04] [Briandowd] Clicked nav: Spil
+[02.53.12] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-2-after-search.png
+[02.53.12] [Shawnryder] Looking for Hell Let Loose card...
+[02.53.12] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-3-not-found.png
+[02.53.12] [Shawnryder] Fatal error: Could not find Hell Let Loose on the GFN games page. Check screenshot hll-3-not-found.png
+[02.53.12] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-2-after-search.png
+[02.53.12] [Briandowd] Looking for Hell Let Loose card...
+[02.53.13] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-3-not-found.png
+[02.53.13] [Briandowd] Fatal error: Could not find Hell Let Loose on the GFN games page. Check screenshot hll-3-not-found.png
+[2026-06-15T00:53:13.410Z] [SYS] All bots stopped.
+PS C:\Users\marcu\Desktop\GFNLauncher> node .\gfn-launcher.cjs
+[2026-06-15T00:54:22.575Z] [SYS] ============================================================
+[2026-06-15T00:54:22.576Z] [SYS] GFN Bot Launcher -- Objective First
+[2026-06-15T00:54:22.577Z] [SYS] API: http://127.0.0.1:8787/api
+[2026-06-15T00:54:22.577Z] [SYS] Log: C:\Users\marcu\Desktop\GFNLauncher\launcher.log
+[2026-06-15T00:54:22.577Z] [SYS] ============================================================
+[2026-06-15T00:54:22.789Z] [SYS] Launching 2 bot(s) in background...
+[02.54.22] [Shawnryder] Starting (profile: C:\GFNBots\EdgeProfile\Bot1)
+[02.54.22] [Briandowd] Starting (profile: C:\GFNBots\EdgeProfile\Bot2)
+[02.54.23] [Shawnryder] Navigating to GFN...
+[02.54.23] [Briandowd] Navigating to GFN...
+[02.54.29] [Shawnryder] Session active -- skipping login
+[02.54.29] [Shawnryder] Navigating to GFN...
+[02.54.30] [Briandowd] Session active -- skipping login
+[02.54.30] [Briandowd] Navigating to GFN...
+[02.54.36] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-1-games-page.png
+[02.54.36] [Shawnryder] Clicked nav: Spil
+[02.54.36] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-1-games-page.png
+[02.54.36] [Briandowd] Clicked nav: Spil
+[02.54.45] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-2-after-search.png
+[02.54.45] [Shawnryder] Visible cards: Spil | Ind tillinger | Hero Game   Rating: Alder +12  VIS DETALJER | VIS DETALJER | Mit bibliotek1 af 6 konti er forbundet-75% Hell Let Loo e | 1 af 6 konti er forbundet-75% Hell Let Loo e | 1 af 6 konti er forbundet | -75% Hell Let Loo e | -75% | Hell Let Loo e | GFN-tor dag-10% SpaceCraft -10% Voidling Bound  NBA THE RUN  STARSEEKER: A troneer Expedition   Duet Night Aby  Nyt på GFN The Elder Scroll ® Online | -10% SpaceCraft -10% Voidling Bound  NBA THE RUN  STARSEEKER: A troneer Expedition   Duet Night Aby  Nyt på GFN The Elder Scroll ® Online | -10% SpaceCraft | -10% | SpaceCraft | -10% Voidling Bound | Voidling Bound | NBA THE RUN | STARSEEKER: A troneer Expedition | Duet Night Aby | Nyt på GFN The Elder Scroll ® Online | Nyt på GFN | The Elder Scroll ® Online | Top ælgere Path of Exile 2 Nu med HDR Gothic 1 Remake  Forza Horizon 6 -75% Hell Let Loo e  Baldur'  Gate 3  Diablo® IV | Path of Exile 2 Nu med HDR Gothic 1 Remake  Forza Horizon 6 -75% Hell Let Loo e  Baldur'  Gate 3  Diablo® IV | Path of Exile 2 | Nu med HDR Gothic 1 Remake | Nu med HDR | Gothic 1 Remake | Forza Horizon 6
+[02.54.45] [Shawnryder] Looking for Hell Let Loose card...
+[02.54.45] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-3-not-found.png
+[02.54.45] [Shawnryder] Fatal error: Could not find Hell Let Loose on the GFN games page. Check screenshot hll-3-not-found.png
+[02.54.45] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-2-after-search.png
+[02.54.45] [Briandowd] Visible cards: Spil | Ind tillinger | Hero Game   Rating: Alder +12  VIS DETALJER | VIS DETALJER | Mit bibliotek1 af 6 konti er forbundet-75% Hell Let Loo e | 1 af 6 konti er forbundet-75% Hell Let Loo e | 1 af 6 konti er forbundet | -75% Hell Let Loo e | -75% | Hell Let Loo e | GFN-tor dag-10% SpaceCraft -10% Voidling Bound  NBA THE RUN  STARSEEKER: A troneer Expedition   Duet Night Aby  New on GFN The Elder Scroll ® Online | -10% SpaceCraft -10% Voidling Bound  NBA THE RUN  STARSEEKER: A troneer Expedition   Duet Night Aby  New on GFN The Elder Scroll ® Online | -10% SpaceCraft | -10% | SpaceCraft | -10% Voidling Bound | Voidling Bound | NBA THE RUN | STARSEEKER: A troneer Expedition | Duet Night Aby | New on GFN The Elder Scroll ® Online | New on GFN | The Elder Scroll ® Online | Top ælgere Path of Exile 2 Now with HDR Gothic 1 Remake  Forza Horizon 6 -75% Hell Let Loo e  Baldur'  Gate 3  Diablo® IV | Path of Exile 2 Now with HDR Gothic 1 Remake  Forza Horizon 6 -75% Hell Let Loo e  Baldur'  Gate 3  Diablo® IV | Path of Exile 2 | Now with HDR Gothic 1 Remake | Now with HDR | Gothic 1 Remake | Forza Horizon 6
+[02.54.45] [Briandowd] Looking for Hell Let Loose card...
+[02.54.45] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-3-not-found.png
+[02.54.45] [Briandowd] Fatal error: Could not find Hell Let Loose on the GFN games page. Check screenshot hll-3-not-found.png
+[2026-06-15T00:54:45.943Z] [SYS] All bots stopped.
+PS C:\Users\marcu\Desktop\GFNLauncher>

@@ -1,0 +1,30 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\marcu\Desktop\GFNLauncher> node .\gfn-launcher.cjs
+[2026-06-15T00:51:10.325Z] [SYS] ============================================================
+[2026-06-15T00:51:10.327Z] [SYS] GFN Bot Launcher -- Objective First
+[2026-06-15T00:51:10.327Z] [SYS] API: http://127.0.0.1:8787/api
+[2026-06-15T00:51:10.327Z] [SYS] Log: C:\Users\marcu\Desktop\GFNLauncher\launcher.log
+[2026-06-15T00:51:10.328Z] [SYS] ============================================================
+[2026-06-15T00:51:10.473Z] [SYS] Launching 2 bot(s) in background...
+[02.51.10] [Shawnryder] Starting (profile: C:\GFNBots\EdgeProfile\Bot1)
+[02.51.10] [Briandowd] Starting (profile: C:\GFNBots\EdgeProfile\Bot2)
+[02.51.11] [Shawnryder] Navigating to GFN...
+[02.51.11] [Briandowd] Navigating to GFN...
+[02.51.17] [Shawnryder] Session active -- skipping login
+[02.51.17] [Shawnryder] Navigating to GFN game library...
+[02.51.17] [Briandowd] Session active -- skipping login
+[02.51.17] [Briandowd] Navigating to GFN game library...
+[02.51.23] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-1-games-page.png
+[02.51.23] [Shawnryder] Looking for Hell Let Loose card...
+[02.51.23] [Shawnryder] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Shawnryder-hll-3-not-found.png
+[02.51.23] [Shawnryder] Fatal error: Could not find Hell Let Loose on the GFN games page. Check screenshot hll-3-not-found.png
+[02.51.23] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-1-games-page.png
+[02.51.23] [Briandowd] Looking for Hell Let Loose card...
+[02.51.23] [Briandowd] Screenshot saved: C:\Users\marcu\Desktop\GFNLauncher\screenshot-Briandowd-hll-3-not-found.png
+[02.51.23] [Briandowd] Fatal error: Could not find Hell Let Loose on the GFN games page. Check screenshot hll-3-not-found.png
+[2026-06-15T00:51:23.551Z] [SYS] All bots stopped.
+PS C:\Users\marcu\Desktop\GFNLauncher>

@@ -1,0 +1,35 @@
+cd "PS C:\Users\marcu\Desktop\Bot-Launcherzip> npm run db:push
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> workspace@0.0.0 db:push
+> pnpm --filter @workspace/db run push
+
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (488 entries in 1.6s)
+Lockfile is up to date, resolution step is skipped
+Packages: +482
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 482, reused 335, downloaded 147, added 482, done
+
+devDependencies:
++ prettier 3.8.3
++ typescript 5.9.3
+
+[ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: esbuild@0.27.3
+
+Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+[ERROR] Command failed with exit code 1: "C:\Users\marcu\AppData\Local\pnpm\global\v11\76c8-19ec722002d\node_modules\@pnpm\exe\pnpm.exe" install
+
+pnpm: Command failed with exit code 1: "C:\Users\marcu\AppData\Local\pnpm\global\v11\76c8-19ec722002d\node_modules\@pnpm\exe\pnpm.exe" install
+    at getFinalError (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:34053:14)
+    at makeError (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:36360:21)
+    at getSyncResult (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:38204:10)
+    at spawnSubprocessSync (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:38164:14)
+    at execaCoreSync (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:38094:23)
+    at callBoundExeca (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:40622:23)
+    at boundExeca (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:40599:49)
+    at sync (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:40758:10)
+    at runPnpmCli (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:244489:5)
+    at runDepsStatusCheck (file:///C:/Users/marcu/AppData/Local/pnpm/store/v11/links/@pnpm/exe/11.6.0/26b60713d931eb226569d063ea15259368b1220146453f547f4f35caa2b06fd0/node_modules/@pnpm/exe/dist/pnpm.mjs:246225:7)
+PS C:\Users\marcu\Desktop\Bot-Launcherzip> 

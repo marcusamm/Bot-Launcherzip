@@ -1,0 +1,318 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: bots
+    description: NVIDIA GeForce Now bot management
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /bots:
+    get:
+      operationId: listBots
+      tags: [bots]
+      summary: List all bots
+      description: Returns all configured NVIDIA GeForce Now bots and their status
+      responses:
+        "200":
+          description: Bot list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Bot"
+    post:
+      operationId: createBot
+      tags: [bots]
+      summary: Create a new bot
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateBotInput"
+      responses:
+        "201":
+          description: Created bot
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bot"
+
+  /bots/{id}:
+    get:
+      operationId: getBot
+      tags: [bots]
+      summary: Get a single bot
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Bot details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bot"
+        "404":
+          description: Not found
+    patch:
+      operationId: updateBot
+      tags: [bots]
+      summary: Update a bot
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateBotInput"
+      responses:
+        "200":
+          description: Updated bot
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bot"
+    delete:
+      operationId: deleteBot
+      tags: [bots]
+      summary: Delete a bot
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Deleted
+
+  /bots/{id}/launch:
+    post:
+      operationId: launchBot
+      tags: [bots]
+      summary: Launch a specific bot
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Bot launched
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bot"
+        "404":
+          description: Not found
+
+  /bots/{id}/stop:
+    post:
+      operationId: stopBot
+      tags: [bots]
+      summary: Stop a specific bot
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Bot stopped
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bot"
+        "404":
+          description: Not found
+
+  /bots/launch-all:
+    post:
+      operationId: launchAllBots
+      tags: [bots]
+      summary: Launch all bots
+      responses:
+        "200":
+          description: All bots launched
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BulkActionResult"
+
+  /bots/stop-all:
+    post:
+      operationId: stopAllBots
+      tags: [bots]
+      summary: Stop all bots
+      responses:
+        "200":
+          description: All bots stopped
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BulkActionResult"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    BotStatus:
+      type: string
+      enum:
+        - stopped
+        - launching
+        - running
+        - awaiting_auth
+        - error
+
+    Bot:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        accountIndex:
+          type: integer
+        gfnEmail:
+          type: string
+          nullable: true
+        gfnPassword:
+          type: string
+          nullable: true
+        serverName:
+          type: string
+          nullable: true
+        browserProfilePath:
+          type: string
+          nullable: true
+          description: Path to the saved browser user-data directory for this bot's session (e.g. C:\EdgeProfiles\Bot01)
+        status:
+          $ref: "#/components/schemas/BotStatus"
+        authCode:
+          type: string
+          nullable: true
+          description: One-time auth code entered by the operator — read by the automation script to complete login
+        authCodeRequestedAt:
+          type: string
+          nullable: true
+          description: When the automation last set the bot to awaiting_auth
+        lastActivity:
+          type: string
+          nullable: true
+        errorMessage:
+          type: string
+          nullable: true
+      required:
+        - id
+        - name
+        - accountIndex
+        - gfnEmail
+        - gfnPassword
+        - serverName
+        - browserProfilePath
+        - status
+        - authCode
+        - authCodeRequestedAt
+        - lastActivity
+        - errorMessage
+
+    CreateBotInput:
+      type: object
+      properties:
+        name:
+          type: string
+        accountIndex:
+          type: integer
+        gfnEmail:
+          type: string
+          nullable: true
+        gfnPassword:
+          type: string
+          nullable: true
+        serverName:
+          type: string
+          nullable: true
+        browserProfilePath:
+          type: string
+          nullable: true
+      required:
+        - name
+        - accountIndex
+
+    UpdateBotInput:
+      type: object
+      properties:
+        name:
+          type: string
+        accountIndex:
+          type: integer
+        gfnEmail:
+          type: string
+          nullable: true
+        gfnPassword:
+          type: string
+          nullable: true
+        serverName:
+          type: string
+          nullable: true
+        browserProfilePath:
+          type: string
+          nullable: true
+        authCode:
+          type: string
+          nullable: true
+        status:
+          $ref: "#/components/schemas/BotStatus"
+
+    BulkActionResult:
+      type: object
+      properties:
+        affected:
+          type: integer
+        bots:
+          type: array
+          items:
+            $ref: "#/components/schemas/Bot"
+      required:
+        - affected
+        - bots

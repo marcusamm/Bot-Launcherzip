@@ -1,0 +1,40 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\marcu\Desktop\GFNLauncher> npm start
+npm error Missing script: "start"
+npm error
+npm error Did you mean one of these?
+npm error   npm star # Mark your favorite packages
+npm error   npm stars # View packages marked as favorites
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: C:\Users\marcu\AppData\Local\npm-cache\_logs\2026-06-15T00_44_37_524Z-debug-0.log
+PS C:\Users\marcu\Desktop\GFNLauncher> node .\gfn-launcher.cjs
+[2026-06-15T00:44:46.596Z] [SYS] ============================================================
+[2026-06-15T00:44:46.597Z] [SYS] GFN Bot Launcher -- Objective First
+[2026-06-15T00:44:46.598Z] [SYS] API: http://127.0.0.1:8787/api
+[2026-06-15T00:44:46.598Z] [SYS] Log: C:\Users\marcu\Desktop\GFNLauncher\launcher.log
+[2026-06-15T00:44:46.598Z] [SYS] ============================================================
+[2026-06-15T00:44:46.752Z] [SYS] Launching 2 bot(s) in background...
+[02.44.46] [Shawnryder] Starting (profile: C:\GFNBots\EdgeProfile\Bot1)
+[02.44.46] [Briandowd] Starting (profile: C:\GFNBots\EdgeProfile\Bot2)
+[02.44.47] [Shawnryder] Navigating to GFN...
+[02.44.47] [Briandowd] Navigating to GFN...
+[02.44.53] [Shawnryder] Session active -- skipping login
+[02.44.53] [Shawnryder] Searching for Hell Let Loose on GFN...
+[02.44.54] [Briandowd] Session active -- skipping login
+[02.44.54] [Briandowd] Searching for Hell Let Loose on GFN...
+[02.44.56] [Shawnryder] Fatal error: locator.click: Unexpected token "=" while parsing css selector "[data-title*="Hell Let Loose" i], [aria-label*="Hell Let Loose" i], text="Hell Let Loose"". Did you mean to CSS.escape it?
+Call log:
+  - waiting for [data-title*="Hell Let Loose" i], [aria-label*="Hell Let Loose" i], text="Hell Let Loose" >> nth=0
+
+[02.44.56] [Briandowd] Fatal error: locator.click: Unexpected token "=" while parsing css selector "[data-title*="Hell Let Loose" i], [aria-label*="Hell Let Loose" i], text="Hell Let Loose"". Did you mean to CSS.escape it?
+Call log:
+  - waiting for [data-title*="Hell Let Loose" i], [aria-label*="Hell Let Loose" i], text="Hell Let Loose" >> nth=0
+
+[2026-06-15T00:44:56.692Z] [SYS] All bots stopped.
+PS C:\Users\marcu\Desktop\GFNLauncher>

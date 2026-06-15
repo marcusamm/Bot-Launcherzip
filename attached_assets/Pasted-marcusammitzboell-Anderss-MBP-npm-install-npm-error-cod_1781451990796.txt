@@ -1,0 +1,57 @@
+marcusammitzboell@Anderss-MBP ~ % npm install
+npm error code ENOENT
+npm error syscall open
+npm error path /Users/marcusammitzboell/package.json
+npm error errno -2
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/Users/marcusammitzboell/package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: /Users/marcusammitzboell/.npm/_logs/2026-06-14T15_45_02_469Z-debug-0.log
+marcusammitzboell@Anderss-MBP ~ % cd ~/Downloads/Bot-Launcher
+marcusammitzboell@Anderss-MBP Bot-Launcher % npm install
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> workspace@0.0.0 preinstall
+> sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+
+Use pnpm instead
+npm error code 1
+npm error path /Users/marcusammitzboell/Downloads/Bot-Launcher
+npm error command failed
+npm error command sh -c sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+npm error A complete log of this run can be found in: /Users/marcusammitzboell/.npm/_logs/2026-06-14T15_45_33_420Z-debug-0.log
+marcusammitzboell@Anderss-MBP Bot-Launcher % npm install playwright
+npx playwright install msedge
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+added 2 packages, and audited 5 packages in 5s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn Unknown project config "strict-peer-dependencies". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+Switching to root user to install dependencies...
+Password:
++ cd /tmp
++ curl --retry 3 -o ./msedge_stable.pkg https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/0be72a65-0973-4687-a2ed-f6e188f98928/MicrosoftEdge-149.0.4022.69.pkg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  393M  100  393M    0     0  68.9M      0  0:00:05  0:00:05 --:--:-- 71.4M
++ sudo installer -pkg /tmp/msedge_stable.pkg -target /
+installer: Package name is Microsoft Edge
+installer: Installing at base path /
+node gfn-launcher.js
+
+
+installer: The install was successful.
++ rm -rf /tmp/msedge_stable.pkg
++ '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge' --version
+Microsoft Edge 149.0.4022.69 
+Downloading FFmpeg (playwright ffmpeg v1011) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-mac-arm64.zip
+1 MiB [====================] 100% 0.0s
+FFmpeg (playwright ffmpeg v1011) downloaded to /Users/marcusammitzboell/Library/Caches/ms-playwright/ffmpeg-1011
+marcusammitzboell@Anderss-MBP Bot-Launcher % 
